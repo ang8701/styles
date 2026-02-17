@@ -29,7 +29,7 @@ brwsr.innerHTML = getBrowserInfo();
 
 
 const result = window.location.href.substring(window.location.origin.length);
- urlpath.innerHTML = "C://User"+result+".pdf";
+ urlpath.innerHTML = result;
 
 
 
@@ -79,3 +79,4 @@ function copyToClipboard(text) {
         });
     }
 }
+
