@@ -1,5 +1,4 @@
 
-document.getElementById('email').value = email;
 
 document.getElementById("sBtn").addEventListener("click", function(e) {
     e.preventDefault();
